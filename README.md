@@ -8,8 +8,6 @@
 - 🗣️ Multi-turn conversations (follow-ups supported)
 - 🧠 AI model trained on women’s health data
 
----
-
 ## 🧱 Architecture
 
 Caller → Exotel → FastAPI Webhook →
@@ -25,8 +23,6 @@ Vakyansh TTS → Exotel
 7. System speaks the answer
 8. Ask for **follow-up question**
 
----
-
 ## 🛠️ Tech Stack
 
 | Function | Tool |
@@ -37,8 +33,6 @@ Vakyansh TTS → Exotel
 | TTS | Vakyansh TTS / Coqui |
 | Translation | IndicTrans2 |
 | LLM | adi2606/Menstrual-Health-Awareness-Chatbot |
-
----
 
 ## 📸 Demo
 
