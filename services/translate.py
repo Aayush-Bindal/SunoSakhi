@@ -5,6 +5,6 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "credentials.json"           #API
 
 translate_client = translate.Client()
 
-translation = translate_client.translate("पीरियड्स क्या होते हैं?", target_language='en')           #change the value and target_language (both coming from outside files)
+translation = translate_client.translate("पीरियड्स क्या होते हैं?", target_language='en-IN')           #change the value and target_language (both coming from outside files)
 translated_text = translation['translatedText']
 print("🌐 Translated to English:", translated_text)
