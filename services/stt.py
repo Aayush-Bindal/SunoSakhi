@@ -1,14 +1,23 @@
 from google.cloud import speech
 import io
-import os
-
-# Set Google Cloud credentials
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "credentials.json"         #API Key calling
 
 def detect_language_from_audio(audio_path, possible_languages=None):
 
     if possible_languages is None:
-        possible_languages = ['hi-IN', 'ta-IN', 'te-IN']          #DOn't add english here to prevent wrong language detection (periods is a english word)
+        possible_languages = [
+            "hi-IN",  # Hindi (India)
+            "bn-IN",  # Bengali (India)
+            "gu-IN",  # Gujarati (India)
+            "kn-IN",  # Kannada (India)
+            "ml-IN",  # Malayalam (India)
+            "mr-IN",  # Marathi (India)
+            "or-IN",  # Oriya (India)
+            "pa-IN",  # Punjabi (India)
+            "ta-IN",  # Tamil (India)
+            "te-IN",  # Telugu (India)
+            "ur-IN",  # Urdu (India)
+        ]
+        #Don't add English here to prevent wrong language detection (periods is an English word)
 
     client = speech.SpeechClient()
 
@@ -36,16 +45,4 @@ def detect_language_from_audio(audio_path, possible_languages=None):
     transcript = result.alternatives[0].transcript
     detected_language = result.language_code if hasattr(result, 'language_code') else possible_languages[0]
 
-    # Save detected language to env var
-    os.environ["DETECTED_LANGUAGE"] = detected_language
-
     return transcript, detected_language
-
-
-# Run detection
-if __name__ == "__main__":
-    transcript, lang_code = detect_language_from_audio("test_16k.wav")       #Change the audio file path from here
-
-    print("Transcript:", transcript)
-    print("Detected Language Code:", lang_code)
-    print("Environment Variable DETECTED_LANGUAGE =", os.getenv("DETECTED_LANGUAGE"))
