@@ -8,7 +8,7 @@ from services.tts import text_to_speech
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "credentials.json"
 
 #start
-audio_path = "input/input.wav"
+audio_path = "files/input/input.wav"
 transcript, lang_code = detect_language_from_audio(audio_path)
 translated_text = translate_text(transcript, source_language=lang_code, target_language='en')
 response = generate_response(translated_text)

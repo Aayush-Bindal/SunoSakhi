@@ -3,7 +3,7 @@ from google.cloud import texttospeech
 def text_to_speech(
     text: str,
     language_code: str,
-    output_filepath: str = "output/output.mp3"
+    output_filepath: str = "files/output/output.mp3"
 ) -> str:
 
     # Initialize the Google Cloud Text-to-Speech client
