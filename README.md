@@ -12,7 +12,7 @@
 
 Caller → Exotel → FastAPI Webhook →
 GoogleCloud STT_V2 → Google_Trans_V2 →
-LLM (adi2606) → Google_Trans_V2→
+LLM → Google_Trans_V2→
 Google_Cloud TTS → Exotel
 1. **User calls** 
 2. **STT** converts voice → text
