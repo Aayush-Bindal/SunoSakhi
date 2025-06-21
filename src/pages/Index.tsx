@@ -49,8 +49,8 @@ const Index = () => {
   const teamMembers = [
     {
       name: "Aayush Bindal",
-      role: "Founder & CEO",
-      bio: "Public Health researcher with 8+ years experience in rural healthcare. PhD from AIIMS.",
+      //role: "Founder & CEO",
+      //bio: "Public Health researcher with 8+ years experience in rural healthcare. PhD from AIIMS.",
       image: "https://drive.google.com/file/d/1kAjsUzOwFomsYd5rUjD9dmX5FmjtVlp9/view?usp=sharing?w=300&h=300&fit=crop&crop=face"
     },
     {
