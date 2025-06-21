@@ -1,41 +1,42 @@
 from google.cloud import texttospeech
-import os
 
-# Set Google Cloud credentials
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "credentials.json"
+def text_to_speech(
+    text: str,
+    language_code: str,
+    output_filepath: str = "output/output.mp3"
+) -> str:
 
-def text_to_speech(text, language_code, output_filename="output.mp3"):          
-
+    # Initialize the Google Cloud Text-to-Speech client
     client = texttospeech.TextToSpeechClient()
 
+    # Set the text input
     synthesis_input = texttospeech.SynthesisInput(text=text)
 
-    # Select voice (you can change gender or language)
-    voice = texttospeech.VoiceSelectionParams(
+    # Configure the voice parameters
+    voice_params = texttospeech.VoiceSelectionParams(
         language_code=language_code,
-        ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL
+        name="hi-IN-Chirp3-HD-Autonoe",
     )
 
-    # Set audio format
+    # Configure the audio output format for MP3
     audio_config = texttospeech.AudioConfig(
-        audio_encoding=texttospeech.AudioEncoding.MP3
+        audio_encoding=texttospeech.AudioEncoding.MP3,
     )
 
-    # Perform the request
-    response = client.synthesize_speech(
-        input=synthesis_input,
-        voice=voice,
-        audio_config=audio_config
-    )
+    try:
+        # Perform the text-to-speech synthesis
+        response = client.synthesize_speech(
+            input=synthesis_input,
+            voice=voice_params,
+            audio_config=audio_config
+        )
 
-    # Save the output
-    with open(output_filename, "wb") as out:
-        out.write(response.audio_content)
-        print(f"✅ Audio content written to '{output_filename}'")
+        # Write the audio content to the specified file
+        with open(output_filepath, "wb") as out:
+            out.write(response.audio_content)
+        print(f"Audio content written to file: {output_filepath}")
+        return output_filepath
 
-
-# Example usage
-if __name__ == "__main__":
-    text = "Periods are a normal part of the menstrual cycle."                  #add variable to get text
-    lang = "en-US"                                                              #change language code
-    text_to_speech(text, language_code=lang, output_filename="tts_output.mp3")
+    except Exception as e:
+        print(f"An error occurred during TTS: {e}")
+        return f"Error: {e}"
