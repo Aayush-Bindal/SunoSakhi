@@ -1,2 +1,4 @@
 credentials.json
+.env
 services/__pycache__/
+__pycache__/
