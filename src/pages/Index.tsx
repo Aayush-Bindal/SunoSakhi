@@ -48,21 +48,33 @@ const Index = () => {
 
   const teamMembers = [
     {
-      name: "Dr. Priya Sharma",
+      name: "Aayush Bindal",
       role: "Founder & CEO",
       bio: "Public Health researcher with 8+ years experience in rural healthcare. PhD from AIIMS.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop&crop=face"
+      image: "https://drive.google.com/file/d/1kAjsUzOwFomsYd5rUjD9dmX5FmjtVlp9/view?usp=sharing?w=300&h=300&fit=crop&crop=face"
     },
     {
-      name: "Rahul Gupta",
-      role: "CTO",
-      bio: "Former Google engineer specializing in AI/ML and cloud infrastructure. 10+ years in tech.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
+      name: "Akshat",
+      //role: "CTO",
+      //bio: "Former Google engineer specializing in AI/ML and cloud infrastructure. 10+ years in tech.",
+      image: "https://drive.google.com/file/d/1PYthrLeHRU6lWrx6ub9xlmXlWBStjNx6/view?usp=sharing?w=300&h=300&fit=crop&crop=face"
     },
     {
-      name: "Anita Desai",
-      role: "Head of Operations",
-      bio: "Rural development expert with experience at NGOs across 15 states in India.",
+      name: "Anmol",
+      //role: "Head of Operations",
+      //bio: "Rural development expert with experience at NGOs across 15 states in India.",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face"
+    },
+    {
+      name: "Ishika Walia",
+      //role: "Head of Operations",
+      //bio: "Rural development expert with experience at NGOs across 15 states in India.",
+      image: "https://drive.google.com/file/d/1MvB1mTU6xTSNeYReAKYLP6JhBbvLr013/view?usp=sharing?w=300&h=300&fit=crop&crop=face"
+    },
+    {
+      name: "Kavya",
+      //role: "Head of Operations",
+      //bio: "Rural development expert with experience at NGOs across 15 states in India.",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face"
     }
   ];
