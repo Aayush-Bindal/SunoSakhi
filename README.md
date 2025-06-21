@@ -11,9 +11,9 @@
 ## 🧱 Architecture
 
 Caller → Exotel → FastAPI Webhook →
-Vakyansh STT → IndicTrans2 →
-LLM (adi2606) → IndicTrans2 →
-Vakyansh TTS → Exotel
+GoogleCloud STT_V2 → Google_Trans_V2 →
+LLM (adi2606) → Google_Trans_V2→
+Google_Cloud TTS → Exotel
 1. **User calls** 
 2. **STT** converts voice → text
 3. **Translate to English**
@@ -29,9 +29,9 @@ Vakyansh TTS → Exotel
 |----------|------|
 | Telephony | Exotel |
 | Backend | FastAPI |
-| STT | Vakyansh ASR |
-| TTS | Vakyansh TTS / Coqui |
-| Translation | IndicTrans2 |
+| STT | Google Cloud STT_V2 |
+| TTS | Google Cloud TTS |
+| Translation | Google Cloud Trans_V2 |
 | LLM | adi2606/Menstrual-Health-Awareness-Chatbot |
 
 ## 📸 Demo
