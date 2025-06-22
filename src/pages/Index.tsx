@@ -51,31 +51,31 @@ const Index = () => {
       name: "Aayush Bindal",
       //role: "Founder & CEO",
       //bio: "Public Health researcher with 8+ years experience in rural healthcare. PhD from AIIMS.",
-      image: "https://drive.google.com/file/d/1kAjsUzOwFomsYd5rUjD9dmX5FmjtVlp9/view?usp=sharing?w=300&h=300&fit=crop&crop=face"
+      image: "/public/team/aayushbindal.jpg"
     },
     {
       name: "Akshat",
       //role: "CTO",
       //bio: "Former Google engineer specializing in AI/ML and cloud infrastructure. 10+ years in tech.",
-      image: "https://drive.google.com/file/d/1PYthrLeHRU6lWrx6ub9xlmXlWBStjNx6/view?usp=sharing?w=300&h=300&fit=crop&crop=face"
+      image: "/public/team/akshat.jpg"
     },
     {
       name: "Anmol Mittal",
       //role: "Head of Operations",
       //bio: "Rural development expert with experience at NGOs across 15 states in India.",
-      image: "https://drive.google.com/file/d/1bEr12UIAmjBBUG9B9QofUSzso1waLUfh/view?usp=sharing"
+      image: "/public/team/anmol.jpg"
     },
     {
       name: "Ishika Walia",
       //role: "Head of Operations",
       //bio: "Rural development expert with experience at NGOs across 15 states in India.",
-      image: "https://drive.google.com/file/d/1MvB1mTU6xTSNeYReAKYLP6JhBbvLr013/view?usp=sharing?w=300&h=300&fit=crop&crop=face"
+      image: "/public/team/ishika.jpg"
     },
     {
       name: "Kavya",
       //role: "Head of Operations",
       //bio: "Rural development expert with experience at NGOs across 15 states in India.",
-      image: "https://drive.google.com/file/d/1qBHSPKJUloq5GrkWgiL7auNnktXlLx1Q/view?usp=sharing"
+      image: "/public/team/kavya.jpg"
     }
   ];
 
@@ -422,7 +422,7 @@ const Index = () => {
               <Shield className="h-12 w-12 text-white mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Investors</h3>
               <p className="mb-4 opacity-90">Join our Series A round to scale across India</p>
-              <Button variant="outline" className="text-white border-white hover:bg-white hover:text-pink-600">
+              <Button variant="outline" className="text-pink-800 border-white hover:bg-white hover:text-pink-600">
                 Investment Deck
               </Button>
             </Card>
@@ -431,7 +431,7 @@ const Index = () => {
               <Heart className="h-12 w-12 text-white mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">NGO Partners</h3>
               <p className="mb-4 opacity-90">Collaborate to reach underserved communities</p>
-              <Button variant="outline" className="text-white border-white hover:bg-white hover:text-rose-600">
+              <Button variant="outline" className="text-pink-800 border-white hover:bg-white hover:text-rose-600">
                 Partnership Info
               </Button>
             </Card>
@@ -440,7 +440,7 @@ const Index = () => {
               <Target className="h-12 w-12 text-white mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Grant Funders</h3>
               <p className="mb-4 opacity-90">Support research and community impact</p>
-              <Button variant="outline" className="text-white border-white hover:bg-white hover:text-pink-600">
+              <Button variant="outline" className="text-pink-800 border-white hover:bg-white hover:text-pink-600">
                 Grant Proposals
               </Button>
             </Card>
