@@ -60,10 +60,10 @@ const Index = () => {
       image: "https://drive.google.com/file/d/1PYthrLeHRU6lWrx6ub9xlmXlWBStjNx6/view?usp=sharing?w=300&h=300&fit=crop&crop=face"
     },
     {
-      name: "Anmol",
+      name: "Anmol Mittal",
       //role: "Head of Operations",
       //bio: "Rural development expert with experience at NGOs across 15 states in India.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face"
+      image: "https://drive.google.com/file/d/1bEr12UIAmjBBUG9B9QofUSzso1waLUfh/view?usp=sharing"
     },
     {
       name: "Ishika Walia",
@@ -75,7 +75,7 @@ const Index = () => {
       name: "Kavya",
       //role: "Head of Operations",
       //bio: "Rural development expert with experience at NGOs across 15 states in India.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face"
+      image: "https://drive.google.com/file/d/1qBHSPKJUloq5GrkWgiL7auNnktXlLx1Q/view?usp=sharing"
     }
   ];
 
