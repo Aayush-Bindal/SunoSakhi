@@ -499,15 +499,15 @@ const Index = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 text-pink-600 mr-3" />
-                  <span>hello@sunosakhi.org</span>
+                  <span>sunosakhi.connect@gmail.com</span>
                 </div>
-                <div className="flex items-center">
+                {/*<div className="flex items-center">
                   <Phone className="h-5 w-5 text-pink-600 mr-3" />
-                  <span>+91 98765 43210</span>
-                </div>
+                  <span>+91 1111111111</span>
+                </div>*/}
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 text-pink-600 mr-3" />
-                  <span>Bangalore, Karnataka, India</span>
+                  <span>Patiala, Punjab, India</span>
                 </div>
               </div>
               
