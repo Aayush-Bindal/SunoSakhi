@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from utils.audio_utils import convert_to_wav_16khz_mono
-from services.stt import detect_language_from_audio
+from services.stt import detect_language_from_audio_multi_pass
 from services.translate import translate_text
 # from services.llm import generate_response
 from services.llm2 import generate_response2
@@ -28,7 +28,7 @@ if audio_path is None:
     raise FileNotFoundError("No upload file found with supported audio formats")
 
 converted_audio_path = convert_to_wav_16khz_mono(audio_path)
-transcript, lang_code = detect_language_from_audio(converted_audio_path)
+transcript, lang_code = detect_language_from_audio_multi_pass(converted_audio_path)
 translated_text = translate_text(transcript, source_language=lang_code, target_language='en')
 # response = generate_response(translated_text)
 response = generate_response2(translated_text, api_key)
