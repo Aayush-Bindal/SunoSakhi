@@ -2,12 +2,12 @@ from huggingface_hub import InferenceClient
 
 def generate_response2(text, api_key):
     client = InferenceClient(
-        provider="featherless-ai",
+        provider="together",
         api_key=api_key,
     )
 
     completion = client.chat.completions.create(
-        model="HuggingFaceH4/zephyr-7b-beta",
+        model="mistralai/Mistral-7B-Instruct-v0.3",
         messages=[
             {
                 "role": "system",
@@ -18,7 +18,6 @@ def generate_response2(text, api_key):
                 "content": text,
             }
         ],
-        max_tokens=150,
     )
 
     return completion.choices[0].message.content
