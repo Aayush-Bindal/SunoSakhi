@@ -12,10 +12,26 @@ def text_to_speech(
     # Set the text input
     synthesis_input = texttospeech.SynthesisInput(text=text)
 
+    #get voice name
+    voices = {
+        "hi-in": "hi-IN-Chirp3-HD-Autonoe",  # Hindi Chirp3 HD
+        "bn-in": "bn-IN-Chirp3-HD-Autonoe",  # Bengali (India) Chirp3 HD
+        "gu-in": "gu-IN-Chirp3-HD-Autonoe",  # Gujarati (India) Chirp3 HD
+        "kn-in": "kn-IN-Chirp3-HD-Autonoe",  # Kannada (India) Chirp3 HD
+        "ml-in": "ml-IN-Chirp3-HD-Autonoe",  # Malayalam (India) Chirp3 HD
+        "mr-in": "mr-IN-Chirp3-HD-Autonoe",  # Marathi (India) Chirp3 HD
+        "or-in": "or-IN-Chirp3-HD-Autonoe",  # Oriya (India)
+        "pa-in": "pa-IN-Chirp3-HD-Autonoe",  # Punjabi (India)
+        "ta-in": "ta-IN-Chirp3-HD-Autonoe",  # Tamil (India)
+        "te-in": "te-IN-Chirp3-HD-Autonoe",  # Telugu (India)
+        "ur-in": "ur-IN-Chirp3-HD-Autonoe",  # Urdu (India)
+    }
+    voice_name = voices.get(language_code)
+
     # Configure the voice parameters
     voice_params = texttospeech.VoiceSelectionParams(
         language_code=language_code,
-        name="hi-IN-Chirp3-HD-Autonoe",
+        name=voice_name,
     )
 
     # Configure the audio output format for MP3
