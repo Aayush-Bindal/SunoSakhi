@@ -50,7 +50,6 @@ def text_to_speech(
         # Write the audio content to the specified file
         with open(output_filepath, "wb") as out:
             out.write(response.audio_content)
-        print(f"Audio content written to file: {output_filepath}")
         return output_filepath
 
     except Exception as e:
