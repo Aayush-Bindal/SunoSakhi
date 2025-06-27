@@ -32,7 +32,7 @@ Google_Cloud TTS → Exotel
 | STT | Google Cloud STT_V2 |
 | TTS | Google Cloud TTS |
 | Translation | Google Cloud Trans_V2 |
-| LLM | adi2606/Menstrual-Health-Awareness-Chatbot |
+| LLM | mistral 7b |
 
 ## 📸 Demo
 
