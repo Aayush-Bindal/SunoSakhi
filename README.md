@@ -1,6 +1,6 @@
 # 🌸 SunoSakhi – Voice AI for Women’s Health (Hackathon Project)
 
-**SunoSakhi** is a voice-based AI assistant that allows rural women to call a number and ask questions about menstrual, sexual, and reproductive health in their **own regional language** — with **complete privacy** and no need for smartphones.
+**SunoSakhi** is a voice-based AI assistant that allows rural women to call a number and ask questions about menstrual, sexual, and reproductive health in their **own regional language** with **complete privacy** and no need for smartphones.
 
 ## 📱 Features
 
